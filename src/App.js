@@ -1,25 +1,34 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import 'semantic-ui-css/semantic.min.css';
+import { Grid } from 'semantic-ui-react';
+
+
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <Grid celled='internally'>
+
+          <Grid.Row>
+            <Grid.Column width={6}>
+              <p> Chat Rooms </p>
+            </Grid.Column>
+            <Grid.Column width={10}>
+              <p> Chat display </p>
+            </Grid.Column>
+          </Grid.Row>
+
+          <Grid.Row>
+            <Grid.Column width={6}>
+              <p> Chat options </p>
+            </Grid.Column>
+            <Grid.Column width={10}>
+              <p> Chat input </p>
+            </Grid.Column>
+          </Grid.Row>
+
+        </Grid>
       </div>
     );
   }
