@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import 'semantic-ui-css/semantic.min.css';
 import { Grid } from 'semantic-ui-react';
 
+//components
+import ChatInput from './components/chatInput';
+
 
 
 class App extends Component {
@@ -24,7 +27,7 @@ class App extends Component {
               <p> Chat options </p>
             </Grid.Column>
             <Grid.Column width={10}>
-              <p> Chat input </p>
+              <ChatInput/>
             </Grid.Column>
           </Grid.Row>
 
