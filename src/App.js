@@ -18,7 +18,7 @@ class App extends Component {
               <ChatroomList/>
             </Grid.Column>
             <Grid.Column width={8}>
-              <MessageCard/>
+              <MessageList/>
             </Grid.Column>
           </Grid.Row>
 
