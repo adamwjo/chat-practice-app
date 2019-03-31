@@ -5,8 +5,7 @@ import { Grid } from 'semantic-ui-react';
 //components
 import ChatInput from './components/chatInput';
 import ChatroomList from './components/chatroomList';
-import MessageCard from './components/messageCard';
-
+import MessageList from './components/messageList';
 
 class App extends Component {
   render() {
